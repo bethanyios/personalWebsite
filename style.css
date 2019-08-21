@@ -96,3 +96,7 @@
 .pics {
   width: 1000px;
 }
+.img {
+   border-radius: 50%;
+   margin: 75px;
+}

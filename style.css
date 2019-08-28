@@ -98,5 +98,16 @@
 }
 .img {
    border-radius: 50%;
-   margin: 75px;
+   float: left;
+   width: 600px;
+   height: 600px;
+   margin: 60px;
+}
+#profiletext {
+  color: black;
+  font-size: 28px;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  vertical-align: right;
+  margin-left: 500px;
+  margin-top: 130px;
 }

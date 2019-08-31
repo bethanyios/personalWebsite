@@ -4,14 +4,27 @@ showSlides();
 
 var slides,dots,timer;
 
+var isPlaying = true;
+
+function playPause() {
+  var slides = document.getElementById("mySlides");
+  if (isPlaying === true) {
+    clearTimeout(timer);
+    isPlaying = false;
+  } else {
+    showSlides();
+    isPlaying = true;
+  }
+}
+
 function showSlides() {
   var i;
   slides = document.getElementsByClassName("mySlides");
   dots = document.getElementsByClassName("dot");
   for (i = 0; i < slides.length; i++) {
      slides[i].style.display = "none";
-  }
-  slideIndex++;
+
+  }slideIndex++;
   if (slideIndex> slides.length) {slideIndex = 1}
   for (i = 0; i < dots.length; i++) {
       dots[i].className = dots[i].className.replace(" active", "");
